@@ -227,7 +227,7 @@ func (p *Parser) parseExpression(precedence int) Node {
 	prevOperator := ""
 	opToken := p.current
 	for opToken.Is(Operator) && p.err == nil {
-		negate := opToken.Is(Operator, "not")
+		negate := opToken.Is(Operator, "not") || opToken.Is(Operator, "NOT")
 		var notToken Token
 
 		// Handle "not *" operator, like "not in" or "not contains".

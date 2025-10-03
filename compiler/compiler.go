@@ -422,7 +422,7 @@ func (c *compiler) UnaryNode(node *ast.UnaryNode) {
 
 	switch node.Operator {
 
-	case "!", "not":
+	case "!", "not", "NOT":
 		c.emit(OpNot)
 
 	case "+":
@@ -438,14 +438,14 @@ func (c *compiler) UnaryNode(node *ast.UnaryNode) {
 
 func (c *compiler) BinaryNode(node *ast.BinaryNode) {
 	switch node.Operator {
-	case "==":
+	case "==", "=":
 		c.equalBinaryNode(node)
 
 	case "!=":
 		c.equalBinaryNode(node)
 		c.emit(OpNot)
 
-	case "or", "||":
+	case "or", "||", "OR":
 		c.compile(node.Left)
 		c.derefInNeeded(node.Left)
 		end := c.emit(OpJumpIfTrue, placeholder)
@@ -454,7 +454,7 @@ func (c *compiler) BinaryNode(node *ast.BinaryNode) {
 		c.derefInNeeded(node.Right)
 		c.patchJump(end)
 
-	case "and", "&&":
+	case "and", "&&", "AND":
 		c.compile(node.Left)
 		c.derefInNeeded(node.Left)
 		end := c.emit(OpJumpIfFalse, placeholder)
@@ -533,14 +533,14 @@ func (c *compiler) BinaryNode(node *ast.BinaryNode) {
 		c.derefInNeeded(node.Right)
 		c.emit(OpExponent)
 
-	case "in":
+	case "in", "IN":
 		c.compile(node.Left)
 		c.derefInNeeded(node.Left)
 		c.compile(node.Right)
 		c.derefInNeeded(node.Right)
 		c.emit(OpIn)
 
-	case "matches":
+	case "matches", "regexp", "REGEXP":
 		if str, ok := node.Right.(*ast.StringNode); ok {
 			re, err := regexp.Compile(str.Value)
 			if err != nil {
@@ -557,7 +557,7 @@ func (c *compiler) BinaryNode(node *ast.BinaryNode) {
 			c.emit(OpMatches)
 		}
 
-	case "contains":
+	case "contains", "CONTAINS":
 		c.compile(node.Left)
 		c.derefInNeeded(node.Left)
 		c.compile(node.Right)

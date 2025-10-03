@@ -127,9 +127,9 @@ loop:
 		default:
 			l.backup()
 			switch l.word() {
-			case "not":
+			case "not", "NOT":
 				return not
-			case "in", "or", "and", "matches", "contains", "startsWith", "endsWith", "let", "if", "else":
+			case "in", "IN", "or", "OR", "and", "AND", "matches", "regexp", "REGEXP", "contains", "CONTAINS", "startsWith", "endsWith", "let", "if", "else":
 				l.emit(Operator)
 			default:
 				l.emit(Identifier)
@@ -159,7 +159,7 @@ func not(l *Lexer) stateFn {
 	}
 
 	switch l.word() {
-	case "in", "matches", "contains", "startsWith", "endsWith":
+	case "in", "IN", "matches", "regexp", "REGEXP", "contains", "CONTAINS", "startsWith", "endsWith":
 		l.emit(Operator)
 	default:
 		l.end = end

@@ -11,7 +11,7 @@ type inRange struct{}
 func (*inRange) Visit(node *Node) {
 	switch n := (*node).(type) {
 	case *BinaryNode:
-		if n.Operator == "in" {
+		if n.Operator == "in" || n.Operator == "IN" {
 			t := n.Left.Type()
 			if t == nil {
 				return

@@ -291,7 +291,7 @@ func (v *Checker) unaryNode(node *ast.UnaryNode) Nature {
 
 	switch node.Operator {
 
-	case "!", "not":
+	case "!", "not", "NOT":
 		if nt.IsBool() {
 			return v.config.NtCache.FromType(boolType)
 		}
@@ -322,12 +322,12 @@ func (v *Checker) binaryNode(node *ast.BinaryNode) Nature {
 	r = r.Deref(&v.config.NtCache)
 
 	switch node.Operator {
-	case "==", "!=":
+	case "==", "!=", "=":
 		if l.ComparableTo(&v.config.NtCache, r) {
 			return v.config.NtCache.FromType(boolType)
 		}
 
-	case "or", "||", "and", "&&":
+	case "or", "||", "and", "&&", "OR", "AND":
 		if l.IsBool() && r.IsBool() {
 			return v.config.NtCache.FromType(boolType)
 		}
@@ -430,7 +430,7 @@ func (v *Checker) binaryNode(node *ast.BinaryNode) Nature {
 			return Nature{}
 		}
 
-	case "in":
+	case "in", "IN":
 		if (l.IsString() || l.IsUnknown(&v.config.NtCache)) && r.IsStruct() {
 			return v.config.NtCache.FromType(boolType)
 		}
@@ -455,7 +455,7 @@ func (v *Checker) binaryNode(node *ast.BinaryNode) Nature {
 			return v.config.NtCache.FromType(boolType)
 		}
 
-	case "matches":
+	case "matches", "regexp", "REGEXP":
 		if s, ok := node.Right.(*ast.StringNode); ok {
 			_, err := regexp.Compile(s.Value)
 			if err != nil {
@@ -469,7 +469,7 @@ func (v *Checker) binaryNode(node *ast.BinaryNode) Nature {
 			return v.config.NtCache.FromType(boolType)
 		}
 
-	case "contains", "startsWith", "endsWith":
+	case "contains", "startsWith", "endsWith", "CONTAINS":
 		if l.IsString() && r.IsString() {
 			return v.config.NtCache.FromType(boolType)
 		}

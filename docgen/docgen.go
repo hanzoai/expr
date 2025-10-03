@@ -36,7 +36,7 @@ type Type struct {
 }
 
 var (
-	Operators = []string{"matches", "contains", "startsWith", "endsWith"}
+	Operators = []string{"matches", "regexp", "REGEXP", "contains", "CONTAINS", "startsWith", "endsWith"}
 	Builtins  = map[Identifier]*Type{
 		"true":   {Kind: "bool"},
 		"false":  {Kind: "bool"},

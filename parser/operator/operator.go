@@ -17,12 +17,12 @@ func Less(a, b string) bool {
 }
 
 func IsBoolean(op string) bool {
-	return op == "and" || op == "or" || op == "&&" || op == "||"
+	return op == "and" || op == "or" || op == "&&" || op == "||" || op == "AND" || op == "OR"
 }
 
 func AllowedNegateSuffix(op string) bool {
 	switch op {
-	case "contains", "matches", "startsWith", "endsWith", "in":
+	case "contains", "matches", "startsWith", "endsWith", "in", "IN", "regexp", "REGEXP", "CONTAINS":
 		return true
 	default:
 		return false
@@ -31,6 +31,7 @@ func AllowedNegateSuffix(op string) bool {
 
 var Unary = map[string]Operator{
 	"not": {50, Left},
+	"NOT": {50, Left},
 	"!":   {50, Left},
 	"-":   {90, Left},
 	"+":   {90, Left},
@@ -39,18 +40,25 @@ var Unary = map[string]Operator{
 var Binary = map[string]Operator{
 	"|":          {0, Left},
 	"or":         {10, Left},
+	"OR":         {10, Left},
 	"||":         {10, Left},
 	"and":        {15, Left},
+	"AND":        {15, Left},
 	"&&":         {15, Left},
 	"==":         {20, Left},
+	"=":          {20, Left},
 	"!=":         {20, Left},
 	"<":          {20, Left},
 	">":          {20, Left},
 	">=":         {20, Left},
 	"<=":         {20, Left},
 	"in":         {20, Left},
+	"IN":         {20, Left},
 	"matches":    {20, Left},
+	"regexp":     {20, Left},
+	"REGEXP":     {20, Left},
 	"contains":   {20, Left},
+	"CONTAINS":   {20, Left},
 	"startsWith": {20, Left},
 	"endsWith":   {20, Left},
 	"..":         {25, Left},

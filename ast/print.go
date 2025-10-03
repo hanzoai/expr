@@ -46,7 +46,7 @@ func (n *ConstantNode) String() string {
 
 func (n *UnaryNode) String() string {
 	op := n.Operator
-	if n.Operator == "not" {
+	if n.Operator == "not" || n.Operator == "NOT" {
 		op = fmt.Sprintf("%s ", n.Operator)
 	}
 	wrap := false

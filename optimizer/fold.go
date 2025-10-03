@@ -39,7 +39,7 @@ func (fold *fold) Visit(node *Node) {
 			if i, ok := n.Node.(*FloatNode); ok {
 				patch(&FloatNode{Value: i.Value})
 			}
-		case "!", "not":
+		case "!", "not", "NOT":
 			if a := toBool(n.Node); a != nil {
 				patch(&BoolNode{Value: !a.Value})
 			}
@@ -212,7 +212,7 @@ func (fold *fold) Visit(node *Node) {
 					patch(&FloatNode{Value: math.Pow(a.Value, b.Value)})
 				}
 			}
-		case "and", "&&":
+		case "and", "&&", "AND":
 			a := toBool(n.Left)
 			b := toBool(n.Right)
 
@@ -223,7 +223,7 @@ func (fold *fold) Visit(node *Node) {
 			} else if (a != nil && !a.Value) || (b != nil && !b.Value) { // "x and false" or "false and x"
 				patch(&BoolNode{Value: false})
 			}
-		case "or", "||":
+		case "or", "||", "OR":
 			a := toBool(n.Left)
 			b := toBool(n.Right)
 
@@ -234,7 +234,7 @@ func (fold *fold) Visit(node *Node) {
 			} else if (a != nil && a.Value) || (b != nil && b.Value) { // "x or true" or "true or x"
 				patch(&BoolNode{Value: true})
 			}
-		case "==":
+		case "==", "=":
 			{
 				a := toInteger(n.Left)
 				b := toInteger(n.Right)

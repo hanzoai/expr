@@ -45,16 +45,18 @@ func (v *predicateCombination) Visit(node *Node) {
 
 func combinedOperator(fn, op string) (string, bool) {
 	switch {
-	case fn == "all" && (op == "and" || op == "&&"):
+	case fn == "all" && (op == "and" || op == "&&" || op == "AND"):
 		return op, true
-	case fn == "any" && (op == "or" || op == "||"):
+	case fn == "any" && (op == "or" || op == "||" || op == "OR"):
 		return op, true
-	case fn == "none" && (op == "and" || op == "&&"):
+	case fn == "none" && (op == "and" || op == "&&" || op == "AND"):
 		switch op {
 		case "and":
 			return "or", true
 		case "&&":
 			return "||", true
+		case "AND":
+			return "OR", true
 		}
 	}
 	return "", false

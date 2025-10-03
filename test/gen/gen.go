@@ -18,11 +18,15 @@ var (
 	builtins   []string
 	operators  = []string{
 		"or",
+		"OR",
 		"||",
 		"and",
+		"AND",
 		"&&",
 		"==",
+		"=",
 		"!=",
+		"<>",
 		"<",
 		">",
 		">=",
@@ -36,13 +40,21 @@ var (
 		"**",
 		"^",
 		"in",
+		"IN",
 		"matches",
+		"regexp",
+		"REGEXP",
 		"contains",
+		"CONTAINS",
 		"startsWith",
 		"endsWith",
 		"not in",
+		"NOT IN",
 		"not matches",
+		"not regexp",
+		"NOT REGEXP",
 		"not contains",
+		"NOT CONTAINS",
 		"not startsWith",
 		"not endsWith",
 	}
@@ -218,7 +230,7 @@ func memberNode(depth int) string {
 }
 
 func unaryNode(depth int) string {
-	return random([]string{"-", "!", "not"})
+	return random([]string{"-", "!", "not", "NOT"})
 }
 
 func binaryNode(depth int) string {
