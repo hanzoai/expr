@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/hanzoai/expr"
-	"github.com/hanzoai/expr/internal/testify/require"
+	"github.com/expr-lang/expr"
+	"github.com/expr-lang/expr/internal/testify/require"
 )
 
 type X struct{}

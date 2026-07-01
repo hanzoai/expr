@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"reflect"
 
-	. "github.com/hanzoai/expr/checker/nature"
-	"github.com/hanzoai/expr/internal/deref"
-	"github.com/hanzoai/expr/types"
+	. "github.com/expr-lang/expr/checker/nature"
+	"github.com/expr-lang/expr/internal/deref"
+	"github.com/expr-lang/expr/types"
 )
 
 // Env returns the Nature of the given environment.

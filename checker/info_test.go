@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hanzoai/expr/internal/testify/require"
+	"github.com/expr-lang/expr/internal/testify/require"
 
-	"github.com/hanzoai/expr/checker"
-	"github.com/hanzoai/expr/test/mock"
+	"github.com/expr-lang/expr/checker"
+	"github.com/expr-lang/expr/test/mock"
 )
 
 func TestTypedFuncIndex(t *testing.T) {

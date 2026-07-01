@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/hanzoai/expr/internal/testify/require"
+	"github.com/expr-lang/expr/internal/testify/require"
 
-	"github.com/hanzoai/expr"
+	"github.com/expr-lang/expr"
 )
 
 // TestUserDefinedStaticLabels tests examples from the User-Defined Static Labels section

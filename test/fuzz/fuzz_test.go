@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hanzoai/expr"
+	"github.com/expr-lang/expr"
 )
 
 //go:embed fuzz_corpus.txt

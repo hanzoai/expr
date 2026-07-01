@@ -16,7 +16,7 @@ const exclude = [
 cd(path.resolve(__dirname, '..', '..'))
 
 await spinner('Running tests', async () => {
-  await $`go test -coverprofile=coverage.out -coverpkg=github.com/hanzoai/expr/... ./...`
+  await $`go test -coverprofile=coverage.out -coverpkg=github.com/expr-lang/expr/... ./...`
   const coverage = fs.readFileSync('coverage.out').toString()
     .split('\n')
     .filter(line => {

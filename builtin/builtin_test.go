@@ -7,15 +7,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hanzoai/expr/internal/testify/assert"
-	"github.com/hanzoai/expr/internal/testify/require"
+	"github.com/expr-lang/expr/internal/testify/assert"
+	"github.com/expr-lang/expr/internal/testify/require"
 
-	"github.com/hanzoai/expr"
-	"github.com/hanzoai/expr/builtin"
-	"github.com/hanzoai/expr/checker"
-	"github.com/hanzoai/expr/conf"
-	"github.com/hanzoai/expr/parser"
-	"github.com/hanzoai/expr/test/mock"
+	"github.com/expr-lang/expr"
+	"github.com/expr-lang/expr/builtin"
+	"github.com/expr-lang/expr/checker"
+	"github.com/expr-lang/expr/conf"
+	"github.com/expr-lang/expr/parser"
+	"github.com/expr-lang/expr/test/mock"
 )
 
 func TestBuiltin(t *testing.T) {
@@ -507,7 +507,7 @@ func TestBuiltin_type(t *testing.T) {
 		{func() {}, "func"},
 		{time.Now(), "time.Time"},
 		{time.Second, "time.Duration"},
-		{Foo{}, "github.com/hanzoai/expr/builtin_test.Foo"},
+		{Foo{}, "github.com/expr-lang/expr/builtin_test.Foo"},
 		{struct{}{}, "struct"},
 		{a, "int"},
 	}

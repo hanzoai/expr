@@ -6,12 +6,12 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/hanzoai/expr/ast"
-	"github.com/hanzoai/expr/builtin"
-	. "github.com/hanzoai/expr/checker/nature"
-	"github.com/hanzoai/expr/conf"
-	"github.com/hanzoai/expr/file"
-	"github.com/hanzoai/expr/parser"
+	"github.com/expr-lang/expr/ast"
+	"github.com/expr-lang/expr/builtin"
+	. "github.com/expr-lang/expr/checker/nature"
+	"github.com/expr-lang/expr/conf"
+	"github.com/expr-lang/expr/file"
+	"github.com/expr-lang/expr/parser"
 )
 
 var (

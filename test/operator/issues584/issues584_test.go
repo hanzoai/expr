@@ -3,9 +3,9 @@ package issues584_test
 import (
 	"testing"
 
-	"github.com/hanzoai/expr/internal/testify/assert"
+	"github.com/expr-lang/expr/internal/testify/assert"
 
-	"github.com/hanzoai/expr"
+	"github.com/expr-lang/expr"
 )
 
 type Env struct{}

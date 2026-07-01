@@ -3,11 +3,11 @@ package patch_test
 import (
 	"testing"
 
-	"github.com/hanzoai/expr/internal/testify/require"
+	"github.com/expr-lang/expr/internal/testify/require"
 
-	"github.com/hanzoai/expr"
-	"github.com/hanzoai/expr/ast"
-	"github.com/hanzoai/expr/test/mock"
+	"github.com/expr-lang/expr"
+	"github.com/expr-lang/expr/ast"
+	"github.com/expr-lang/expr/test/mock"
 )
 
 // This patcher tracks how many nodes it patches which can 

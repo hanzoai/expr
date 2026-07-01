@@ -4,10 +4,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hanzoai/expr/internal/testify/require"
+	"github.com/expr-lang/expr/internal/testify/require"
 
-	"github.com/hanzoai/expr"
-	"github.com/hanzoai/expr/ast"
+	"github.com/expr-lang/expr"
+	"github.com/expr-lang/expr/ast"
 )
 
 func TestPatch_SetType(t *testing.T) {

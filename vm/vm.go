@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/hanzoai/expr/builtin"
-	"github.com/hanzoai/expr/conf"
-	"github.com/hanzoai/expr/file"
-	"github.com/hanzoai/expr/internal/deref"
-	"github.com/hanzoai/expr/vm/runtime"
+	"github.com/expr-lang/expr/builtin"
+	"github.com/expr-lang/expr/conf"
+	"github.com/expr-lang/expr/file"
+	"github.com/expr-lang/expr/internal/deref"
+	"github.com/expr-lang/expr/vm/runtime"
 )
 
 func Run(program *Program, env any) (any, error) {

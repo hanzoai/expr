@@ -4,12 +4,12 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/hanzoai/expr"
-	"github.com/hanzoai/expr/ast"
-	"github.com/hanzoai/expr/checker"
-	"github.com/hanzoai/expr/checker/nature"
-	"github.com/hanzoai/expr/conf"
-	"github.com/hanzoai/expr/parser"
+	"github.com/expr-lang/expr"
+	"github.com/expr-lang/expr/ast"
+	"github.com/expr-lang/expr/checker"
+	"github.com/expr-lang/expr/checker/nature"
+	"github.com/expr-lang/expr/conf"
+	"github.com/expr-lang/expr/parser"
 )
 
 func BenchmarkChecker(b *testing.B) {

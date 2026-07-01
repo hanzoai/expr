@@ -5,10 +5,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hanzoai/expr/file"
-	"github.com/hanzoai/expr/internal/testify/assert"
-	"github.com/hanzoai/expr/internal/testify/require"
-	. "github.com/hanzoai/expr/parser/lexer"
+	"github.com/expr-lang/expr/file"
+	"github.com/expr-lang/expr/internal/testify/assert"
+	"github.com/expr-lang/expr/internal/testify/require"
+	. "github.com/expr-lang/expr/parser/lexer"
 )
 
 func TestLex(t *testing.T) {

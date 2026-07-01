@@ -5,9 +5,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/hanzoai/expr/checker/nature"
-	"github.com/hanzoai/expr/conf"
-	"github.com/hanzoai/expr/internal/deref"
+	"github.com/expr-lang/expr/checker/nature"
+	"github.com/expr-lang/expr/conf"
+	"github.com/expr-lang/expr/internal/deref"
 )
 
 // Kind can be any of array, map, struct, func, string, int, float, bool or any.

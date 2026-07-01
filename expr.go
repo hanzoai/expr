@@ -6,16 +6,16 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/hanzoai/expr/ast"
-	"github.com/hanzoai/expr/builtin"
-	"github.com/hanzoai/expr/checker"
-	"github.com/hanzoai/expr/compiler"
-	"github.com/hanzoai/expr/conf"
-	"github.com/hanzoai/expr/file"
-	"github.com/hanzoai/expr/optimizer"
-	"github.com/hanzoai/expr/parser"
-	"github.com/hanzoai/expr/patcher"
-	"github.com/hanzoai/expr/vm"
+	"github.com/expr-lang/expr/ast"
+	"github.com/expr-lang/expr/builtin"
+	"github.com/expr-lang/expr/checker"
+	"github.com/expr-lang/expr/compiler"
+	"github.com/expr-lang/expr/conf"
+	"github.com/expr-lang/expr/file"
+	"github.com/expr-lang/expr/optimizer"
+	"github.com/expr-lang/expr/parser"
+	"github.com/expr-lang/expr/patcher"
+	"github.com/expr-lang/expr/vm"
 )
 
 // Option for configuring config.

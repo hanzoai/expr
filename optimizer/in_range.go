@@ -3,7 +3,7 @@ package optimizer
 import (
 	"reflect"
 
-	. "github.com/hanzoai/expr/ast"
+	. "github.com/expr-lang/expr/ast"
 )
 
 type inRange struct{}

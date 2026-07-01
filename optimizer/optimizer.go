@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"reflect"
 
-	. "github.com/hanzoai/expr/ast"
-	"github.com/hanzoai/expr/conf"
+	. "github.com/expr-lang/expr/ast"
+	"github.com/expr-lang/expr/conf"
 )
 
 func Optimize(node *Node, config *conf.Config) error {

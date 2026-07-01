@@ -11,16 +11,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hanzoai/expr/conf"
-	"github.com/hanzoai/expr/internal/testify/assert"
-	"github.com/hanzoai/expr/internal/testify/require"
-	"github.com/hanzoai/expr/types"
-	"github.com/hanzoai/expr/vm"
+	"github.com/expr-lang/expr/conf"
+	"github.com/expr-lang/expr/internal/testify/assert"
+	"github.com/expr-lang/expr/internal/testify/require"
+	"github.com/expr-lang/expr/types"
+	"github.com/expr-lang/expr/vm"
 
-	"github.com/hanzoai/expr"
-	"github.com/hanzoai/expr/ast"
-	"github.com/hanzoai/expr/file"
-	"github.com/hanzoai/expr/test/mock"
+	"github.com/expr-lang/expr"
+	"github.com/expr-lang/expr/ast"
+	"github.com/expr-lang/expr/file"
+	"github.com/expr-lang/expr/test/mock"
 )
 
 func ExampleEval() {

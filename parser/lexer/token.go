@@ -3,7 +3,7 @@ package lexer
 import (
 	"fmt"
 
-	"github.com/hanzoai/expr/file"
+	"github.com/expr-lang/expr/file"
 )
 
 type Kind string

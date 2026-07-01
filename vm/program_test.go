@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hanzoai/expr/vm"
+	"github.com/expr-lang/expr/vm"
 )
 
 func TestProgram_Disassemble(t *testing.T) {

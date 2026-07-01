@@ -1,7 +1,7 @@
 package optimizer
 
 import (
-	. "github.com/hanzoai/expr/ast"
+	. "github.com/expr-lang/expr/ast"
 )
 
 type sumMap struct{}

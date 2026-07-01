@@ -3,9 +3,9 @@ package ast_test
 import (
 	"testing"
 
-	"github.com/hanzoai/expr/internal/testify/assert"
+	"github.com/expr-lang/expr/internal/testify/assert"
 
-	"github.com/hanzoai/expr/ast"
+	"github.com/expr-lang/expr/ast"
 )
 
 type visitor struct {

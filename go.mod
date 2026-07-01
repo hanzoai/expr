@@ -1,3 +1,3 @@
-module github.com/hanzoai/expr
+module github.com/expr-lang/expr
 
 go 1.18

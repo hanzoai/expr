@@ -3,10 +3,10 @@ package interface_test
 import (
 	"testing"
 
-	"github.com/hanzoai/expr/internal/testify/assert"
-	"github.com/hanzoai/expr/internal/testify/require"
+	"github.com/expr-lang/expr/internal/testify/assert"
+	"github.com/expr-lang/expr/internal/testify/require"
 
-	"github.com/hanzoai/expr"
+	"github.com/expr-lang/expr"
 )
 
 type Bar interface {

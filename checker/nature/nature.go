@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/hanzoai/expr/builtin"
-	"github.com/hanzoai/expr/internal/deref"
+	"github.com/expr-lang/expr/builtin"
+	"github.com/expr-lang/expr/internal/deref"
 )
 
 var (

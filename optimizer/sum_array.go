@@ -3,7 +3,7 @@ package optimizer
 import (
 	"fmt"
 
-	. "github.com/hanzoai/expr/ast"
+	. "github.com/expr-lang/expr/ast"
 )
 
 type sumArray struct{}

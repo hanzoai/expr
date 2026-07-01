@@ -3,7 +3,7 @@ package fuzz
 import (
 	"fmt"
 
-	"github.com/hanzoai/expr"
+	"github.com/expr-lang/expr"
 )
 
 func NewEnv() map[string]any {

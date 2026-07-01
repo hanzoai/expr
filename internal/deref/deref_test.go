@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hanzoai/expr/internal/testify/assert"
+	"github.com/expr-lang/expr/internal/testify/assert"
 
-	"github.com/hanzoai/expr/internal/deref"
+	"github.com/expr-lang/expr/internal/deref"
 )
 
 func TestDeref(t *testing.T) {

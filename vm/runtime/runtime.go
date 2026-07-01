@@ -7,7 +7,7 @@ import (
 	"math"
 	"reflect"
 
-	"github.com/hanzoai/expr/internal/deref"
+	"github.com/expr-lang/expr/internal/deref"
 )
 
 func Fetch(from, i any) any {

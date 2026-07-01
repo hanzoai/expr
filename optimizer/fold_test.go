@@ -4,11 +4,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hanzoai/expr/ast"
-	"github.com/hanzoai/expr/internal/testify/assert"
-	"github.com/hanzoai/expr/internal/testify/require"
-	"github.com/hanzoai/expr/optimizer"
-	"github.com/hanzoai/expr/parser"
+	"github.com/expr-lang/expr/ast"
+	"github.com/expr-lang/expr/internal/testify/assert"
+	"github.com/expr-lang/expr/internal/testify/require"
+	"github.com/expr-lang/expr/optimizer"
+	"github.com/expr-lang/expr/parser"
 )
 
 func TestOptimize_constant_folding(t *testing.T) {

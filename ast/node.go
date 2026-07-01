@@ -3,8 +3,8 @@ package ast
 import (
 	"reflect"
 
-	"github.com/hanzoai/expr/checker/nature"
-	"github.com/hanzoai/expr/file"
+	"github.com/expr-lang/expr/checker/nature"
+	"github.com/expr-lang/expr/file"
 )
 
 var (

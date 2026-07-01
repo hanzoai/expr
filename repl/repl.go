@@ -6,14 +6,14 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/hanzoai/expr/test/fuzz"
+	"github.com/expr-lang/expr/test/fuzz"
 
 	"github.com/bettercap/readline"
 
-	"github.com/hanzoai/expr"
-	"github.com/hanzoai/expr/builtin"
-	"github.com/hanzoai/expr/debug"
-	"github.com/hanzoai/expr/vm"
+	"github.com/expr-lang/expr"
+	"github.com/expr-lang/expr/builtin"
+	"github.com/expr-lang/expr/debug"
+	"github.com/expr-lang/expr/vm"
 )
 
 var keywords = []string{

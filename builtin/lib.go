@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"unicode/utf8"
 
-	"github.com/hanzoai/expr/internal/deref"
-	"github.com/hanzoai/expr/vm/runtime"
+	"github.com/expr-lang/expr/internal/deref"
+	"github.com/expr-lang/expr/vm/runtime"
 )
 
 func Len(x any) any {

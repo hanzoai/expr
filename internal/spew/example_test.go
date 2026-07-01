@@ -19,7 +19,7 @@ package spew_test
 import (
 	"fmt"
 
-	"github.com/hanzoai/expr/internal/spew"
+	"github.com/expr-lang/expr/internal/spew"
 )
 
 type Flag int

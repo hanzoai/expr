@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hanzoai/expr"
-	"github.com/hanzoai/expr/internal/testify/require"
+	"github.com/expr-lang/expr"
+	"github.com/expr-lang/expr/internal/testify/require"
 )
 
 var examples []CodeBlock
