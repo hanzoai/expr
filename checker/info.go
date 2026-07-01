@@ -3,9 +3,9 @@ package checker
 import (
 	"reflect"
 
-	"github.com/expr-lang/expr/ast"
-	. "github.com/expr-lang/expr/checker/nature"
-	"github.com/expr-lang/expr/vm"
+	"github.com/hanzoai/expr/ast"
+	. "github.com/hanzoai/expr/checker/nature"
+	"github.com/hanzoai/expr/vm"
 )
 
 func FieldIndex(c *Cache, env Nature, node ast.Node) (bool, []int, string) {

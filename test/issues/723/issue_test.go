@@ -3,8 +3,8 @@ package issue_test
 import (
 	"testing"
 
-	"github.com/expr-lang/expr"
-	"github.com/expr-lang/expr/internal/testify/require"
+	"github.com/hanzoai/expr"
+	"github.com/hanzoai/expr/internal/testify/require"
 )
 
 func TestIssue723(t *testing.T) {

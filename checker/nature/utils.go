@@ -3,7 +3,7 @@ package nature
 import (
 	"reflect"
 
-	"github.com/expr-lang/expr/internal/deref"
+	"github.com/hanzoai/expr/internal/deref"
 )
 
 func fieldName(fieldName string, tag reflect.StructTag) (string, bool) {

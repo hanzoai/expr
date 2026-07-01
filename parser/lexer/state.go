@@ -3,7 +3,7 @@ package lexer
 import (
 	"strings"
 
-	"github.com/expr-lang/expr/parser/utils"
+	"github.com/hanzoai/expr/parser/utils"
 )
 
 type stateFn func(*Lexer) stateFn

@@ -8,15 +8,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/expr-lang/expr/file"
-	"github.com/expr-lang/expr/internal/testify/require"
+	"github.com/hanzoai/expr/file"
+	"github.com/hanzoai/expr/internal/testify/require"
 
-	"github.com/expr-lang/expr"
-	"github.com/expr-lang/expr/checker"
-	"github.com/expr-lang/expr/compiler"
-	"github.com/expr-lang/expr/conf"
-	"github.com/expr-lang/expr/parser"
-	"github.com/expr-lang/expr/vm"
+	"github.com/hanzoai/expr"
+	"github.com/hanzoai/expr/checker"
+	"github.com/hanzoai/expr/compiler"
+	"github.com/hanzoai/expr/conf"
+	"github.com/hanzoai/expr/parser"
+	"github.com/hanzoai/expr/vm"
 )
 
 func TestRun_NilProgram(t *testing.T) {
