@@ -7,7 +7,7 @@
 //
 //	import (
 //	  "testing"
-//	  "github.com/expr-lang/expr/internal/testify/require"
+//	  "github.com/hanzoai/expr/internal/testify/require"
 //	)
 //
 //	func TestSomething(t *testing.T) {

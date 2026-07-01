@@ -9,10 +9,10 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/expr-lang/expr/ast"
-	"github.com/expr-lang/expr/builtin"
-	"github.com/expr-lang/expr/file"
-	"github.com/expr-lang/expr/vm/runtime"
+	"github.com/hanzoai/expr/ast"
+	"github.com/hanzoai/expr/builtin"
+	"github.com/hanzoai/expr/file"
+	"github.com/hanzoai/expr/vm/runtime"
 )
 
 // Program represents a compiled expression.

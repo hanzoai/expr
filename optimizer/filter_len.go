@@ -1,7 +1,7 @@
 package optimizer
 
 import (
-	. "github.com/expr-lang/expr/ast"
+	. "github.com/hanzoai/expr/ast"
 )
 
 type filterLen struct{}

@@ -9,8 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/expr-lang/expr/internal/deref"
-	"github.com/expr-lang/expr/vm/runtime"
+	"github.com/hanzoai/expr/internal/deref"
+	"github.com/hanzoai/expr/vm/runtime"
 )
 
 var (

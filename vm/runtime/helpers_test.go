@@ -3,9 +3,9 @@ package runtime_test
 import (
 	"testing"
 
-	"github.com/expr-lang/expr/internal/testify/assert"
+	"github.com/hanzoai/expr/internal/testify/assert"
 
-	"github.com/expr-lang/expr/vm/runtime"
+	"github.com/hanzoai/expr/vm/runtime"
 )
 
 var tests = []struct {

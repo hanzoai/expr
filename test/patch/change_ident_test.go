@@ -3,12 +3,12 @@ package patch_test
 import (
 	"testing"
 
-	"github.com/expr-lang/expr/internal/testify/require"
+	"github.com/hanzoai/expr/internal/testify/require"
 
-	"github.com/expr-lang/expr"
-	"github.com/expr-lang/expr/ast"
-	"github.com/expr-lang/expr/vm"
-	"github.com/expr-lang/expr/vm/runtime"
+	"github.com/hanzoai/expr"
+	"github.com/hanzoai/expr/ast"
+	"github.com/hanzoai/expr/vm"
+	"github.com/hanzoai/expr/vm/runtime"
 )
 
 func TestPatch_change_ident(t *testing.T) {

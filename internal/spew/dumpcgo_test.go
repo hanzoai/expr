@@ -27,7 +27,7 @@ package spew_test
 import (
 	"fmt"
 
-	"github.com/expr-lang/expr/internal/spew/testdata"
+	"github.com/hanzoai/expr/internal/spew/testdata"
 )
 
 func addCgoDumpTests() {

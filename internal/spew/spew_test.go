@@ -23,7 +23,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/expr-lang/expr/internal/spew"
+	"github.com/hanzoai/expr/internal/spew"
 )
 
 // spewFunc is used to identify which public function of the spew package or

@@ -6,8 +6,8 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/expr-lang/expr/file"
-	"github.com/expr-lang/expr/internal/ring"
+	"github.com/hanzoai/expr/file"
+	"github.com/hanzoai/expr/internal/ring"
 )
 
 const ringChunkSize = 10

@@ -3,8 +3,8 @@ package interface_test
 import (
 	"testing"
 
-	"github.com/expr-lang/expr"
-	"github.com/expr-lang/expr/internal/testify/assert"
+	"github.com/hanzoai/expr"
+	"github.com/hanzoai/expr/internal/testify/assert"
 )
 
 type StoreInterface interface {

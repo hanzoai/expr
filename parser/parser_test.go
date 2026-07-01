@@ -5,12 +5,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/expr-lang/expr/conf"
-	"github.com/expr-lang/expr/internal/testify/assert"
-	"github.com/expr-lang/expr/internal/testify/require"
+	"github.com/hanzoai/expr/conf"
+	"github.com/hanzoai/expr/internal/testify/assert"
+	"github.com/hanzoai/expr/internal/testify/require"
 
-	. "github.com/expr-lang/expr/ast"
-	"github.com/expr-lang/expr/parser"
+	. "github.com/hanzoai/expr/ast"
+	"github.com/hanzoai/expr/parser"
 )
 
 func TestParse(t *testing.T) {

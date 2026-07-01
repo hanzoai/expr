@@ -3,8 +3,8 @@ package types_test
 import (
 	"testing"
 
-	"github.com/expr-lang/expr/internal/testify/require"
-	. "github.com/expr-lang/expr/types"
+	"github.com/hanzoai/expr/internal/testify/require"
+	. "github.com/hanzoai/expr/types"
 )
 
 func TestType_Equal(t *testing.T) {
