@@ -1,0 +1,18 @@
+# Canonical CI/CD config for hanzoai/expr — read by the hanzoai/ci reusable
+# workflow (.hanzo/workflows/cicd.yml) and by platform.hanzo.ai.
+#
+# LIBRARY: the expr expression language, a pure Go module. No image, no deploy.
+#
+# `go test ./...`, deliberately NOT `go build ./...`. Two reasons, and the second
+# is the interesting one:
+#   - This is a compiler + VM. Its correctness lives entirely in the suite
+#     (parser, checker, optimizer, vm); a compile-only gate proves nothing about
+#     whether an expression still evaluates to the right answer.
+#   - `go build ./...` FAILS here on a healthy tree: test/examples is
+#     `package main` whose only content is a _test.go, so the linker reports
+#     "function main is undeclared in the main package". `go test` builds that
+#     package the way it is meant to be built. A gate that is red on a green
+#     repo teaches everyone to ignore it.
+test:
+  - name: test
+    run: go test ./...
